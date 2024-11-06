@@ -9,15 +9,11 @@ on:
       - main
 
 jobs:
-  check-links:
+  linkChecker:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout repository
-        uses: actions/checkout@v2
+      - uses: actions/checkout@v4
 
-      - name: Run lychee link checker
-        uses: lycheeverse/lychee-action@v1
-        with:
-          args: |
-            *.md
-            *.ipynb
+      - name: Link Checker
+        id: lychee
+        uses: lycheeverse/lychee-action@v2
