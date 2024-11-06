@@ -21,3 +21,4 @@ jobs:
           args: |
             *.md
             *.ipynb
+        continue-on-error: false
