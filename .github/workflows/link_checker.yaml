@@ -25,7 +25,7 @@ jobs:
       - name: Convert Notebooks to Markdown
         run: |
           for notebook in $(find . -name "*.ipynb"); do
-            jupyter nbconvert --to markdown "$notebook"
+            jupyter nbconvert --to markdown "$notebook" --output-dir=ipynb_files_converted_to_md_files
           done
 
       - name: Link Checker
