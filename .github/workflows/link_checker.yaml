@@ -20,5 +20,3 @@ jobs:
         with:
             args: --verbose './**/*.md'
             fail: True
-            format: markdown
-            jobSummary: true
