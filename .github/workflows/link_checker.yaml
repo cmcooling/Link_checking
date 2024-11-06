@@ -19,8 +19,6 @@ jobs:
         uses: lycheeverse/lychee-action@v1
         with:
           args: |
-            --verbose
-            --include README.md
-            --include docs/
+            -- verbose
             *.md
             *.ipynb
